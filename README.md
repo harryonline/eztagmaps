@@ -1,7 +1,7 @@
 eztagmaps
 =========
 
-Create a map in eZ Publish with links to object that have a geographical location as tag.
+Create a map in eZ Publish with links to objects that have a geographical location as tag.
 This extension builds on the eZTags extension.
 
 1. In eZTags, create a tag 'locations' and remember the ID of this tag.
