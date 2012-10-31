@@ -58,11 +58,16 @@ class TemplateGet_objects_by_tagOperator
 				//Find objects with tag
 				$objects = $tag->getRelatedObjects();
 				$nodeList = array();
+				$contentIni = eZINI::instance( 'content.ini' );
+				$maxItems = $contentIni->variable('TagMapSettings', 'MaxItemsPerLocation');
 				foreach( $objects as $i => $obj ) {
 					$node = $obj->attribute( 'main_node');
 					if( strncmp( $node->PathString,
 							$pathFilter, $pathLen ) == 0 ) {
 						$nodeList[] = $node;
+						if( count( $nodeList ) == $maxItems ) {
+							break;
+						}
 					}
 				}
 				if( count( $nodeList) > 0 ) {

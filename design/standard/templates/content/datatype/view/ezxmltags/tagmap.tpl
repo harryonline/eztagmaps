@@ -4,7 +4,6 @@
 	$size=array( $width, $height ) }
 
 <script type="text/javascript">
-var GApiKey="{ezini('SiteSettings','GApiKey')}";
 
 {literal}
 function initialize() {
@@ -60,7 +59,7 @@ function makeMarker(map, data) {
 $(document).ready( function() {
 	var script = document.createElement("script");
 	script.type = "text/javascript";
-	script.src = "http://maps.googleapis.com/maps/api/js?key="+ GApiKey + "&sensor=false&callback=initialize";
+	script.src = "http://maps.google.com/maps/api/js?sensor=false&callback=initialize";
 	document.body.appendChild(script);
 });
 {/literal}

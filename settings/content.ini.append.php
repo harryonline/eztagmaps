@@ -6,7 +6,7 @@ MaxItemsPerLocation=5
 [CustomTagSettings]
 AvailableCustomTags[]=tagmap
 IsInline[tagmap]=false
- 
+
 [tagmap]
 CustomAttributes[]=top_node
 CustomAttributes[]=top_tag
