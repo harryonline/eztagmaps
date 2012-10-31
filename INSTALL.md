@@ -22,6 +22,12 @@ root folder, replacing `user`, `password`, `host` and `database` with correct va
 
     mysql -u "user" -p"password" -h"host" "database" < extension/eztagmaps/sql/mysql/schema.sql
 
+### Set your region
+
+In `extension/eztagmaps/settings/site.ini.append.php`, change the `SiteSettings` `GeoRegion` to your region code,
+specified as a ccTLD ("top-level domain") two-character value. This parameter will only influence,
+not fully restrict, results from the geocoder. 
+
 ### Activate extension
 
 Activate the extension by using the admin interface ( Setup -> Extensions ) or by
