@@ -10,3 +10,4 @@ This extension builds on the eZTags extension.
 4. Specify the top_node to limit the objects to a certain subtree (root node if no limitations), and the top_tag, the ID of the 'locations' tag. 
 5. Optionally, adapt the width and/or height settings.
 
+The map automatically sizes to fit the tagged locations.
